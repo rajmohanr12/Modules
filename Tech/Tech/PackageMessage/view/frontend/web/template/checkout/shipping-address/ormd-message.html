@@ -1,0 +1,18 @@
+<!--
+/**
+* Tech_PackageMessage extension
+* @category Tech
+* @package Tech_PackageMessage
+* @copyright Copyright (c) 2020
+*/
+-->
+<div id="checkout-ormd-message">
+    <p translate="'Due to some ingredients, orders containing items such as nail polish, hairspray, etc. The following item(s) qualifies this order to only be shipped via ground.'" />
+    <ul data-bind="foreach: { data: getOrmd(), as: 'item' }">
+        <li>
+            <span translate="'Item No. '" />
+            <span data-bind="text: item.sku" />
+            <span data-bind="text: item.name"></span>
+        </li>        
+    </ul>
+</div>

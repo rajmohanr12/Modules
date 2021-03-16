@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Tech_PackageMessage extension
+* @category Tech
+* @package Tech_PackageMessage
+* @copyright Copyright (c) 2020
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Tech_PackageMessage" >
+        <sequence>
+            <module name="Magento_Checkout"/>
+        </sequence>
+    </module>
+</config>
+
