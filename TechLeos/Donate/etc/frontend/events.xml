@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package     TechLeos/Donate
+ * @author      code@techleos.com
+ * @copyright   Copyright © Techleos. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">  
+	<event name="checkout_cart_product_add_after">
+        <observer name="add_product_donate" instance="TechLeos\Donate\Observer\DonateQuote" />
+    </event>
+</config>
